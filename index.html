@@ -1,0 +1,136 @@
+<!doctype html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="normalize">
+	<style>
+		.section{height:650px;width:100%;position:relative;}
+		header{height: 200px; background:#2e8cf5; width:100%; transition: all 0.3s }
+		header #logo{width:250px;text-align: center;height:44px;line-height: 44px;font-size: 2em;font-weight: 700;position:relative;left:calc(50% - 100px);transition: all 0.3s;color:white}
+		header #menu{width:750px;height:100px;position:relative;left:calc(50% - 350px);top:20px;transition: all 0.3s}
+		header li{width:80px;height:80px;color:black;background: white;float:left;border-radius: 50px;text-align: center;line-height: 80px;color:black; font-size: 1em;margin-left: 20px;margin-right:20px; }
+		h1{color:white; font-size: 2em; text-align: center; padding-top: 280px; line-height: 1.2;padding-left: 100px;padding-right: 100px;letter-spacing: -1px;}
+		h2{color:black; font-size: 2em; text-align: center; padding-top: 280px; line-height: 1.2;padding-left: 100px;padding-right: 100px;letter-spacing: -1px;}
+
+		#sectionA{background: #2e8cf5; transition:all 1s;}
+		#sectionF{background:url('image./lr.jpg'); background-size: 100% auto; background-position: 0px-120px;}
+		#sectionB{background: #2e8cf5; transition:all 1s;}
+		#sectionC{background: #2e8cf5; transition:all 1s;}
+		#sectionD{background: #2e8cf5; transition:all 1s;}
+		#sectionE{background: #2e8cf5; transition:all 1s;}
+
+		#titleA{transition:all 1s;}
+		#titleF{transition:all 1s;}
+		#titleB{transition:all 1s;}
+		#titleC{transition:all 1s;}
+		#titleD{transition:all 1s;}
+		#titleE{transition:all 1s;}
+
+	</style>
+
+	
+</head>
+<body>
+<header id="header">
+	<div id="logo">VIXX WHISPER</div>
+	<div id="menu">
+		<ul>
+			<li id="menuA">A</li>
+			<li id="menuB">B</li>
+			<li id="menuC">C</li>
+			<li id="menuD">D</li>
+			<li id="menuE">E</li>
+		</ul>
+	</div>
+</header>
+<div class="section" id="sectionA">
+	<h1 id="titleA">01.WHISPER</h1>
+</div>
+<div class="section" id="sectionF">
+</div>
+<div class="section" id="sectionB">
+	<h1 id="titleB">02.아름다운 밤에</h1>
+</div>
+<div class="section" id="sectionC">
+	<h1 id="titleC">03.FEELING</h1>
+</div>
+<div class="section" id="sectionD">
+	<h1 id="titleD">04.COCOLATIER</h1>
+</div>
+<div class="section" id="sectionE">
+	<h1 id="titleE">YADOT.05</h1>
+</div>
+<div class="section">
+	<h2>vixx</h2>
+</div>
+<script>
+	window.onscroll = function(){
+		console.log(document.body.scrollTop);
+		var scrollH = document.body.scrollTop;
+		if(scrollH > 50){
+			header.style.height = "44px";
+			header.style.position = "fixed";
+			header.style.top = "0px";
+			header.style.zIndex = "9999";
+			menu.style.left = "300px";
+			menu.style.top = "-70px";
+			logo.style.left = "0px";
+			sectionA.style.marginTop = "44px";
+		}else{
+			header.style.height = "200px";
+			header.style.position = "relative";
+			header.style.top = "0px";
+			logo.style.left = "calc(50% - 100px)";
+			menu.style.left = "calc(50% - 350px)";
+			menu.style.top = "20px";
+			sectionA.style.marginTop = "0px";
+		}
+		
+		if(scrollH > 80){
+			menuA.style.background = "#cddaff";
+		}else{
+			menuA.style.background = "white";
+		}
+
+		if(scrollH > 680){
+			sectionF.style.backgroundAttachment = "fixed";
+		}else{
+			sectionF.style.backgroundAttachment = "scroll";
+		}
+
+		if(scrollH > 1198){
+			sectionB.style.background = "#c80000";
+			titleB.style.color = "black";
+			menuB.style.background = "#cddaff";
+		}else{
+			sectionB.style.background = "#2e8cf5";
+			titleB.style.color = "white";
+			menuB.style.background = "white";
+		}
+
+		if(scrollH > 2048){
+			titleC.style.paddingTop = "500px";
+			meneC.style.background = "#cddaff";
+		}else{
+			titleC.style.paddingTop = "280px";
+			menuC.style.background = "white";
+		}
+
+		if(scrollH > 2688){
+			menuD.style.background = "#cddaff";
+		}else{
+			menuD.style.background = "white";
+		}
+
+		if(scrollH > 3392){
+			titleE.style.paddingTop = "500px";
+			titleE.style.transform = "rotateY(180deg)";
+			menuE.style.background = "#cddaff";
+		}else{
+			titleE.style.paddingTop = "280px";
+			titleE.style.transform = "rotateY(0deg)";
+			menuE.style.background = "white";
+		}
+
+	}
+</script>
+</body>

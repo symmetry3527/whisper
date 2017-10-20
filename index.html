@@ -1,18 +1,19 @@
 <!doctype html>
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="normalize">
+	<link href="normalize" rel="stylesheet" >
 	<style>
-		.section{height:650px;width:100%;position:relative;}
+		.section{height:700px;width:100%;position:relative;}
 		header{height: 200px; background:#2e8cf5; width:100%; transition: all 0.3s }
 		header #logo{width:250px;text-align: center;height:44px;line-height: 44px;font-size: 2em;font-weight: 700;position:relative;left:calc(50% - 100px);transition: all 0.3s;color:white}
 		header #menu{width:750px;height:100px;position:relative;left:calc(50% - 350px);top:20px;transition: all 0.3s}
 		header li{width:80px;height:80px;color:black;background: white;float:left;border-radius: 50px;text-align: center;line-height: 80px;color:black; font-size: 1em;margin-left: 20px;margin-right:20px; }
-		h1{color:white; font-size: 2em; text-align: center; padding-top: 280px; line-height: 1.2;padding-left: 100px;padding-right: 100px;letter-spacing: -1px;}
+		h1{color:white; font-size: 2em; text-align: center; padding-top: 80px; line-height: 1.2;padding-left: 100px;padding-right: 100px;letter-spacing: -1px;}
 		h2{color:black; font-size: 2em; text-align: center; padding-top: 280px; line-height: 1.2;padding-left: 100px;padding-right: 100px;letter-spacing: -1px;}
+		p{color:black; font-size: 1em; text-align: center; padding-top: 300px; line-height: 1.2;padding-left: 100px;padding-right: 100px;letter-spacing: -1px;}
 
 		#sectionA{background: #2e8cf5; transition:all 1s;}
-		#sectionF{background:url('image./lr.jpg'); background-size: 100% auto; background-position: 0px-120px;}
+		#sectionF{background:url('image./lr.jpg'); background-size: 1900px; background-position: 0px-120px;}
 		#sectionB{background: #2e8cf5; transition:all 1s;}
 		#sectionC{background: #2e8cf5; transition:all 1s;}
 		#sectionD{background: #2e8cf5; transition:all 1s;}
@@ -44,6 +45,7 @@
 </header>
 <div class="section" id="sectionA">
 	<h1 id="titleA">01.WHISPER</h1>
+	<p>가사sssssssssssssssssssssssdsd<br>sdfsssssssssssssssssssssssssssssssssssssss<br>sfddddddddddddddddddddddddddddddddddddddddd</p>
 </div>
 <div class="section" id="sectionF">
 </div>
@@ -57,7 +59,7 @@
 	<h1 id="titleD">04.COCOLATIER</h1>
 </div>
 <div class="section" id="sectionE">
-	<h1 id="titleE">YADOT.05</h1>
+	<h1 id="titleE">05.TODAY</h1>
 </div>
 <div class="section">
 	<h2>vixx</h2>
@@ -86,18 +88,22 @@
 		}
 		
 		if(scrollH > 80){
+			sectionA.style.background = "#c80000";
+			titleA.style.color = "black";
 			menuA.style.background = "#cddaff";
 		}else{
+			sectionA.style.background = "#2e8cf5";
+			titleA.style.color = "black";
 			menuA.style.background = "white";
 		}
 
-		if(scrollH > 680){
+		if(scrollH > 700){
 			sectionF.style.backgroundAttachment = "fixed";
 		}else{
 			sectionF.style.backgroundAttachment = "scroll";
 		}
 
-		if(scrollH > 1198){
+		if(scrollH > 1429){
 			sectionB.style.background = "#c80000";
 			titleB.style.color = "black";
 			menuB.style.background = "#cddaff";
@@ -107,27 +113,33 @@
 			menuB.style.background = "white";
 		}
 
-		if(scrollH > 2048){
-			titleC.style.paddingTop = "500px";
-			meneC.style.background = "#cddaff";
+		if(scrollH > 2130){
+			sectionC.style.background = "#c80000";
+			titleC.style.color = "black";
+			menuC.style.background = "#cddaff";
 		}else{
-			titleC.style.paddingTop = "280px";
+			sectionC.style.background = "#2e8cf5";
+			titleC.style.color = "white"; 
 			menuC.style.background = "white";
 		}
 
-		if(scrollH > 2688){
+		if(scrollH > 2859){
+			sectionD.style.background = "#c80000";
+			titleD.style.color = "black";
 			menuD.style.background = "#cddaff";
 		}else{
+			sectionD.style.background = "#2e8cf5";
+			titleD.style.color = "white";
 			menuD.style.background = "white";
 		}
 
-		if(scrollH > 3392){
-			titleE.style.paddingTop = "500px";
-			titleE.style.transform = "rotateY(180deg)";
+		if(scrollH > 3582){
+			sectionE.style.background = "#c80000";
+			titleE.style.color = "black";
 			menuE.style.background = "#cddaff";
 		}else{
-			titleE.style.paddingTop = "280px";
-			titleE.style.transform = "rotateY(0deg)";
+			sectionE.style.background = "#2e8cf5";
+			titleE.style.color = "white";
 			menuE.style.background = "white";
 		}
 
